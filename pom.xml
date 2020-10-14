@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.atlanmod.unveiling</groupId>
+    <artifactId>unveiling-validation</artifactId>
+    <version>1.10.0</version>
+
+    <packaging>pom</packaging>
+
+    <licenses>
+        <license>
+            <name>EPL</name>
+            <url>www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/unveiling/unveiling-validation/issues</url>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <id>sunye</id>
+            <name>G. Sunyé</name>
+            <email>sunye@atlanmod.org</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>scm:git:git@github.com:unveiling/unveiling-validation.git</url>
+        <connection>scm:git:git@github.com:unveiling/unveiling-validation.git</connection>
+        <developerConnection>scm:git:git@github.com:unveiling/unveiling-validation.git</developerConnection>
+  </scm>
+
+    <modules>
+        <module>org.eclipse.emf.validation</module>
+        <module>org.eclipse.emf.validation/org.eclipse.emf.validation.p2</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>photon</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/photon/</url>
+        </repository>
+        <repository>
+            <id>emf</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/modeling/emf/emf/builds/release/2.15/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.fork>true</maven.compiler.fork>
+        <eclipse.platform.version>[3.6.0,4.0.0)</eclipse.platform.version>
+        <emf.version>2.15.0</emf.version>
+        <tycho.version>2.0.0</tycho.version>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-sunye</id>
+            <name>sunye-atlanMod</name>
+            <url>https://api.bintray.com/maven/sunye/AtlanMod/emf-maven/;publish=1</url>
+        </repository>
+    </distributionManagement>
+</project>
+
