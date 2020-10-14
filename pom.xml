@@ -73,8 +73,8 @@
     <distributionManagement>
         <repository>
             <id>bintray-sunye</id>
-            <name>sunye-atlanMod</name>
-            <url>https://api.bintray.com/maven/sunye/AtlanMod/emf-maven/;publish=1</url>
+            <name>Atlanmod unveiling</name>
+            <url>https://api.bintray.com/maven/atlanmod/unveiling/unveiling-validation/;publish=1</url>
         </repository>
     </distributionManagement>
 </project>
