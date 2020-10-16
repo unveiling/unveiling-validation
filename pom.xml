@@ -1,55 +1,35 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>unveiling-parent</artifactId>
+        <groupId>org.atlanmod.unveiling</groupId>
+        <version>1.0.0</version>
+        <relativePath/>
+    </parent>
 
     <groupId>org.atlanmod.unveiling</groupId>
     <artifactId>unveiling-validation</artifactId>
     <version>1.10.0</version>
-
     <packaging>pom</packaging>
-
-    <licenses>
-        <license>
-            <name>EPL</name>
-            <url>www.eclipse.org/legal/epl-v10.html</url>
-        </license>
-    </licenses>
 
     <issueManagement>
         <system>GitHub Issues</system>
         <url>https://github.com/unveiling/unveiling-validation/issues</url>
     </issueManagement>
 
-    <developers>
-        <developer>
-            <id>sunye</id>
-            <name>G. Sunyé</name>
-            <email>sunye@atlanmod.org</email>
-        </developer>
-    </developers>
-
     <scm>
         <url>scm:git:git@github.com:unveiling/unveiling-validation.git</url>
         <connection>scm:git:git@github.com:unveiling/unveiling-validation.git</connection>
         <developerConnection>scm:git:git@github.com:unveiling/unveiling-validation.git</developerConnection>
-  </scm>
+    </scm>
 
     <modules>
         <module>org.eclipse.emf.validation</module>
         <module>org.eclipse.emf.validation/org.eclipse.emf.validation.p2</module>
     </modules>
 
-    <repositories>
-        <repository>
-            <id>photon</id>
-            <layout>p2</layout>
-            <url>http://download.eclipse.org/releases/photon/</url>
-        </repository>
-        <repository>
-            <id>emf</id>
-            <layout>p2</layout>
-            <url>http://download.eclipse.org/modeling/emf/emf/builds/release/2.15/</url>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>

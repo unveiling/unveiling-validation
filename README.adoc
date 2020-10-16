@@ -8,7 +8,7 @@ The builds on Bintray are available https://dl.bintray.com/atlanmod/unveiling[he
 == Available versions
 
 |===
-| Unveiling Transaction Version | EMF Transaction Version | EMF version | Eclipse Version
+| Unveiling Validation Version | EMF Validation Version | EMF version | Eclipse Version
 
 | 1.10.x
 | 1.10.0
